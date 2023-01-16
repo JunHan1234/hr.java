@@ -56,7 +56,7 @@ public class LaborerIo {
 	private void addLaborer() {
 		String laborerName = Console.inStr("노동자명을 입력하세요.", 5);
 		
-		if(!laborerName.equals("0") ) {
+		if(!laborerName.equals("0")) {
 			LocalDate hireDate = Console.inDate("입사일을 입력하세요.");
 			laborerService.addLaborer(laborerName, hireDate);
 			Console.info("노동자를 추가했습니다.");
