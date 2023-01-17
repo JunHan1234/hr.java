@@ -24,6 +24,7 @@ public class LaborerServiceImpl implements LaborerService {
 		laborerDao.insertLaborer(laborerName, hireDate);
 	}
 	
+	/*Exception을 단계별로 throws하여 더블체크, 트리플체크 시킨다.*/
 	@Override
 	public void fixLaborer(Laborer laborer) throws NoneException {
 		laborerDao.updateLaborer(laborer);
