@@ -42,7 +42,7 @@ public class LaborerDaoImpl implements LaborerDao {
 	public void updateLaborer(Laborer laborer) {
 		this.deleteLaborer(laborer.laborerId());
 		laborers.add(laborer);
-		laborers.sort(Comparator.comparing(Laborer::laborerId/*laborerId는 method다.*/)); //laborerId로 내림차순 정렬.
+		laborers.sort(Comparator.comparing(Laborer::laborerId/*laborerId는 method다.*/)); //laborerId로 오름차순 정렬.
 	}
 	
 	@Override
